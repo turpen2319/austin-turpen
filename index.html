@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<link href="./style.css" rel="stylesheet"/>
+	<title>Austin Turpen</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="#about-me">About Me</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#projects">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="#contact">Contact</a>
+					</li>
+					<!-- <li class="nav-item">
+						<a class="nav-link ">Resume</a>
+					</li> -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="about-me">
+		<p>Welcome! I'm Austin.</p>
+		<p class="intro"><span class="emphasis">Full stack engineer</span> with a passion for empowering students and educators through tech. </p>
+	</section>
+	<section id="projects" class="flex-col flex-ctr-ctr">
+		<h2>— My Work</h2>
+		<div class="project-card">
+			<div class="project-content">
+				<video autoplay loop muted playsinline controls src="./media/grammar-vision.mp4"></video>
+				<p><span class="emphasis">Grammar Vision · </span> Take a photo of your document from the in-app camera, submit it, and see how you can improve your writing! This app utilizes optical character recognition (ORC) to convert images of handwriting into plain text, which is then checked for spelling and grammar. The grammar data is integrated with the image data in order to annotate the original image.</p>
+				<div class="tech-stack flex-row">
+					<img src="./media/react.svg" alt="react logo">
+					<img src="./media/nodejs.svg" alt="nodejs logo">
+					<img src="./media/express.svg" alt="express logo">
+					<img src="./media/mongodb.svg" alt="mongodb logo">
+					<img src="./media/google-cloud.svg" alt="google cloud logo">
+				</div>
+			</div>
+		</div>
+		<div class="project-card">
+			<div class="project-content">
+				<video autoplay loop muted playsinline controls src="./media/EmojiMazeGameplay.mov"></video>
+				<p><span class="project-title">Emoji Maze · </span> Solve the maze before the time runs out! Choose from a variety of characters, including one (for now) AI character that will solve the maze algorithmically. The maze is represented by an unweighted, undirected graph and implements Deapth First Search to find the goal.</p>
+				<div class="tech-stack flex-row">
+					<img src="./media/javascript.svg" alt="javascript logo">
+					<img src="./media/html-5.svg" alt="html5 logo">
+					<img src="./media/css-3.svg" alt="css logo">
+				</div>
+			</div>
+		</div>
+		<div class="project-card">
+			<div class="project-content">
+				<video autoplay loop muted playsinline controls src="./media/squasher-linkedin 2.mp4"></video>
+				<p><span class="project-title">Squasher · </span> Log in with Google, open a live room, and share the link with a friend to screen share and chat about code in real time. Users can also post coding questions/answers to the feed. Be sure your browser is up to date, and allow camera and audio permissions for to access live features. (Screen share not supported on mobile devices.)</p>
+				<div class="tech-stack flex-row">
+					<img src="./media/nodejs.svg" alt="nodejs logo">
+					<img src="./media/express.svg" alt="express logo">
+					<img src="./media/mongodb.svg" alt="mongodb logo">
+					<img src="./media/socket.io.svg" alt="socket.io logo">
+					<img src="./media/webrtc.svg" alt="webRTC logo">
+				</div>
+			</div>
+		</div>
+	</section>
+	<h2>— Skills</h2>
+	<section id="skills" class="flex-ctr-ctr">
+		<div class="skill-card">
+			<h5>Languages</h5>
+			<hr>
+			<div class="flex-row flex-ctr-ctr">
+				<p>JavaScript</p>
+				<p>Python</p>
+				<p>TypeScript</p>
+				<p>HTML</p>
+				<p>CSS</p>
+			</div>
+		</div>
+		<div class="skill-card">
+			<h5>Web Frameworks</h5>
+			<hr>
+			<div class="flex-row flex-ctr-ctr">
+				<p>Express.js</p>
+				<p>Node.js</p>
+				<p>Django</p>
+				<p>Koa</p>
+			</div>
+		</div>
+		<div class="skill-card">
+			<h5>Frontend</h5>
+			<hr>
+			<div class="flex-row flex-ctr-ctr">
+				<p>React</p>
+				<p>Material UI</p>
+				<p>HTML</p>
+				<p>CSS</p>
+			</div>
+		</div>
+		<div class="skill-card">
+			<h5>Database</h5>
+			<hr>
+			<div class="flex-row flex-ctr-ctr">
+				<p>MongoDB</p>
+				<p>PosgreSQL</p>
+				<p>TypeORM</p>
+				<p>Mongoose</p>
+				<p>Django Model Manager</p>
+			</div>
+		</div>
+		<div class="skill-card">
+			<h5>Dev Ops</h5>
+			<hr>
+			<div class="flex-row flex-ctr-ctr">
+				<p>Google Cloud Platform</p>
+				<p>Heroku</p>
+				<p>GitHub Pages</p>
+			</div>
+		</div>
+	</section>
+	<section id="contact">
+		<h2>— Contact</h2>
+		<div>
+			<a href="https://github.com/turpen2319" target="_blank"><img src="./media/github-icon.svg" alt="github profile link"> GitHub</a>
+			<a href="mailto:turpen2319@gmail.com"><img src="./media/google-gmail.svg" alt="gmail link"> Email</a>
+		</div>
+	</section>
+</body>
+</html>
