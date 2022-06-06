@@ -5,8 +5,8 @@
 }
 
 body {
-   background-color: var(--blue);
-   color: whitesmoke;
+   background-color: whitesmoke;
+   color: var(--blue);
    margin: 2px;
 }
 
@@ -50,7 +50,7 @@ video {
 }
 
 .nav-link {
-    color: whitesmoke;
+    color: var(--blue);
 }
 
 .nav-link:hover {
@@ -98,7 +98,8 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    min-height: 90vh;
+    height: fit-content;
     width: 100%;
     margin: 3vh 0 10vh;
     /* align-self: flex-start; */
@@ -114,6 +115,28 @@ section {
     width: 100%;
 }
 
+.button {
+    display: inline-block;
+    width: 105px;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid var(--blue);
+    margin: 12px;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--pink);
+    text-align: center;
+    transition: all 0.2s;
+    background-color: none;
+}
+
+.button:hover{
+    color: var(--blue);
+    background-color: var(--teal);
+    cursor: pointer;
+}
+
 .tech-stack img {
     width: 60px;
     background-color: whitesmoke;
@@ -124,12 +147,10 @@ section {
 
 .project-card p {
     margin: 15px;
-    /* grid-column: 1/2;
-    grid-row: 5/6; */
 }
 
 .emphasis {
-    color: var(--teal);
+    color: var(--pink);
     font-weight: 500;
     font-size: 1.2em;
 }
@@ -144,22 +165,24 @@ section {
 
 #contact a {
     margin: 5vw;
-
+    color: var(--blue);
 }
 
 .skill-card {
+    background-color: white;
     width: 350px;
-    height: 180px;
-    max-width: 90%;
+    height: fit-content;
+    min-height: 180px;
+    max-width: 95%;
     border: 1px solid whitesmoke;
     border-radius: 10px;
-    box-shadow: 5px 10px 3px rgba(255, 255, 255, 0.05);
+    box-shadow: 5px 10px 3px rgba(0, 0, 0, 0.07);
     padding: 8px;
     margin: 15px;
 }
 
 .skill-card p {
-    background-color: var(--pink);
+    background-color: var(--teal);
     border-radius: 10px;
     margin: 10px;
     padding: 4px;
