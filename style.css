@@ -37,6 +37,23 @@ video {
     grid-column: 1/2;
 }
 
+.flex-ctr-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
 .bg-light {
     background-color: transparent !important;
 }
@@ -74,23 +91,12 @@ section {
     text-align: center;
     font-size: larger;
     margin-bottom: 8vh;
+    align-self: center;
 }
 
-.flex-ctr-ctr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
-}
-
-.flex-col {
-    display: flex;
-    flex-direction: column;
+.intro {
+    width: 600px;
+    max-width: 80vw;
 }
 
 .project-card {
